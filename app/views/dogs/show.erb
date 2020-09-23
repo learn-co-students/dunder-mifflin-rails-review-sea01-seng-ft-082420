@@ -1,0 +1,8 @@
+<h1><%= @dog.name%> </h1>
+<h1><%= @dog.breed%> </h1>
+<h1><%= @dog.age%> </h1>
+<h1><%= @dog.employees.map do |name| %>
+ <%= link_to name.first_name + " " + name.last_name, employee_path(name) %><br>
+    <%end%>
+</h1>
+
